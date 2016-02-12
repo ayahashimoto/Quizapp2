@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="b_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="gOn-1t-LbH">
+                                <rect key="frame" x="0.0" y="0.0" width="1200" height="1200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gOn-1t-LbH" secondAttribute="height" multiplier="1:1" id="jP8-Lw-X6V"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" misplaced="YES" image="b_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="AV6-WP-TN2">
+                                <rect key="frame" x="0.0" y="0.0" width="1200" height="1200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AV6-WP-TN2" secondAttribute="height" multiplier="1:1" id="vVp-sH-Nrc"/>
+                                    <constraint firstAttribute="width" secondItem="AV6-WP-TN2" secondAttribute="height" multiplier="1:1" id="wap-d9-TDt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2d-g6-1LD">
+                                <rect key="frame" x="168" y="236" width="140" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IU0-xO-Mkg"/>
+                                    <constraint firstAttribute="width" constant="140" id="pS6-mi-5mH"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="b_maru.png"/>
+                                <connections>
+                                    <action selector="maru:" destination="BYZ-38-t0r" eventType="touchDown" id="EFA-Ba-vzx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mr0-wd-I39">
+                                <rect key="frame" x="320" y="235" width="140" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="RRA-wM-fuP"/>
+                                    <constraint firstAttribute="height" constant="100" id="g1h-PY-NBl"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="b_batsu.png"/>
+                                <connections>
+                                    <action selector="batsu:" destination="BYZ-38-t0r" eventType="touchDown" id="07s-N1-a5z"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BCv-px-C5n">
+                                <rect key="frame" x="134" y="76" width="348" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="4gE-uR-EIA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="32B-Wx-UGl">
+                                <rect key="frame" x="80" y="76" width="507" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5sj-K2-9cG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="l_s.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lm0-nL-U1O">
+                                <rect key="frame" x="208" y="101" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3iS-5b-PBl"/>
+                                    <constraint firstAttribute="width" constant="200" id="Xp0-PV-u3w"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BCv-px-C5n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="0j8-JD-xO3"/>
+                            <constraint firstItem="32B-Wx-UGl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="6HF-Fj-BXH"/>
+                            <constraint firstItem="AV6-WP-TN2" firstAttribute="top" secondItem="gOn-1t-LbH" secondAttribute="top" id="Bv0-j5-zGv"/>
+                            <constraint firstItem="AV6-WP-TN2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CfY-lh-SyM"/>
+                            <constraint firstItem="AV6-WP-TN2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cll-q7-DMO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G2d-g6-1LD" secondAttribute="bottom" constant="30" id="EVb-ac-YU8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BCv-px-C5n" secondAttribute="trailing" constant="60" id="H9O-FP-OKY"/>
+                            <constraint firstItem="gOn-1t-LbH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="HoK-wX-mIU"/>
+                            <constraint firstItem="Lm0-nL-U1O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JeS-Ci-9f4"/>
+                            <constraint firstItem="AV6-WP-TN2" firstAttribute="leading" secondItem="gOn-1t-LbH" secondAttribute="leading" id="LKp-NA-1bt"/>
+                            <constraint firstItem="gOn-1t-LbH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MPK-8Z-taG"/>
+                            <constraint firstItem="BCv-px-C5n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="N1N-g1-9LW"/>
+                            <constraint firstItem="Lm0-nL-U1O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qp8-1n-L1e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mr0-wd-I39" secondAttribute="trailing" constant="100" id="aAa-qk-iAI"/>
+                            <constraint firstItem="32B-Wx-UGl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="bUO-L2-Dox"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="32B-Wx-UGl" secondAttribute="trailing" constant="60" id="eUw-Bi-3Am"/>
+                            <constraint firstItem="AV6-WP-TN2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="n6Q-FQ-uQw"/>
+                            <constraint firstItem="G2d-g6-1LD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="w8c-aT-dYp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mr0-wd-I39" secondAttribute="bottom" constant="30" id="zIZ-oZ-gLC"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bg_q" destination="AV6-WP-TN2" id="6ck-vJ-kRx"/>
+                        <outlet property="bg_r" destination="gOn-1t-LbH" id="srD-Lb-x3a"/>
+                        <outlet property="mondai" destination="32B-Wx-UGl" id="zdI-9K-v4j"/>
+                        <outlet property="resultimageview" destination="Lm0-nL-U1O" id="W0B-Ha-Njq"/>
+                        <outlet property="seitou" destination="BCv-px-C5n" id="QSk-74-lyQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="l_h.png" id="1v5-5D-AVb">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="l_s.png" id="34i-J9-pPE">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="305" y="415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="b_1.png" width="1600" height="1600"/>
+        <image name="b_2.png" width="1600" height="1600"/>
+        <image name="b_batsu.png" width="342" height="240"/>
+        <image name="b_maru.png" width="341" height="240"/>
+        <image name="l_h.png" width="468" height="468"/>
+        <image name="l_s.png" width="468" height="468"/>
+    </resources>
+</document>
